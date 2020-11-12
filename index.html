@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app=""
-ng-init="name='Benjdia';age=23">
+ng-init="names=['Benjdia','Omari','hussein']">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,8 @@ ng-init="name='Benjdia';age=23">
 </head>
 <script type="text/javascript" src="angularjs/angular.min.js"></script>
 <body>
-   nom : {{ name }}
-   <br>
-   age : {{ age }}
-   <br>
-   <span ng-bind="name"></span>
+   <ul ng-repeat="name in names">
+       <li> {{ name }}</li>
+   </ul>
 </body>
 </html>
