@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html ng-app=""
-ng-init="names=['Benjdia','Omari','hussein']">
+<html ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> AngularJS </title>
 </head>
 <script type="text/javascript" src="angularjs/angular.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <body>
-   <ul ng-repeat="name in names">
-       <li> {{ name }}</li>
-   </ul>
+   <div ng-controller="myCtr">
+     <ul ng-repeat="name in names">
+        <li> {{ name }}</li>
+     </ul>
+
+     <br>
+
+     {{ degree }}
+   </div>
 </body>
 </html>
