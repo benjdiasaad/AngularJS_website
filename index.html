@@ -9,13 +9,20 @@
 <script type="text/javascript" src="js/main.js"></script>
 <body>
    <div ng-controller="myCtr">
-     <ul ng-repeat="name in names">
-        <li> {{ name }}</li>
-     </ul>
-
-     <br>
-
-     {{ degree }}
+     <table>
+         <tr ng-repeat="friend in friends">
+             <td>
+                 <img src="image/{{friend.name}}.jpg" width="100" height="100" alt="{{ friend.name }}">
+             </td>
+             <td>
+             <h3> 
+                 {{friend.name}}
+                <br>
+             </h3>
+                 {{ friend.desc}}
+             </td>
+         </tr>
+     </table>
    </div>
 </body>
 </html>
