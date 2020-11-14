@@ -6,4 +6,9 @@ app.controller("myCtr",function($scope){
                       {name:"cristiano", desc:"player"},
                       {name:"ayoub", desc:"artist"},
                       {name:"skouma", desc:"romario"} ];
+    
+    $scope.clicme = function(name , desc){
+        $scope.updatename=name;
+        $scope.updatedesc=desc;
+    }                      
 })

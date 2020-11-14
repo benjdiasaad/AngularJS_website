@@ -21,9 +21,14 @@
                 <br>
              </h3>
                  {{ friend.desc}}
+                <input type="submit" ng-click="clicme(friend.name,friend.desc)">
              </td>
          </tr>
      </table>
+     <br>
+     update info
+     <input type="text" ng-model="updatename">
+     <input type="text" ng-model="updatedesc">
    </div>
 </body>
 </html>
